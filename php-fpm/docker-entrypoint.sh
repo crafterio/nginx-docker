@@ -38,4 +38,4 @@ if [[ -d ${POST_DIR} ]]; then
 fi
 
 # Start passenger
-nginx -g daemon off;
+nginx -g 'daemon off;';

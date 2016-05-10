@@ -7,7 +7,9 @@ WORKDIR $CODE_DIR
 
 ADD docker-entrypoint.sh /docker-entrypoint.sh
 
-RUN chmod +x /docker-entrypoint.sh
+RUN apk --update add bash \
+  && rm -rf /var/cache/apk/* \
+  && chmod +x /docker-entrypoint.sh
 
 ADD application.conf /etc/nginx/conf.d/default.conf
 
