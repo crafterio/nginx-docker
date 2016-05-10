@@ -1,4 +1,4 @@
-# Python Docker image
+# Nginx Docker image
 
 This repository contains the docker images relevant for crafter.
 
